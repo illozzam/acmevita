@@ -23,14 +23,14 @@ flask run
 | URL | Método | Descrição | Campos obrigatórios |
 | ------ | ------ | ------ | ------ |
 | /departments/list/ | GET | Lista todos os departamentos cadastrados | |
-| /departments/<id>/ | GET | Retorna detalhes sobre o departamento |  |
+| /departments/[id]/ | GET | Retorna detalhes sobre o departamento |  |
 | /departments/insert/ | POST | Registra um departamento | name -> Nome do departamento |
 
 #### /colaborators/
 | URL | Método | Descrição | Campos obrigatórios |
 | ------ | ------ | ------ | ------ |
 | /colaborators/list/ | GET | Lista todos os colaboradores | |
-| /colaborators/<id>/dependents/ | GET | Retorna a lista de dependentes do colaborador |  |
+| /colaborators/[id]/dependents/ | GET | Retorna a lista de dependentes do colaborador |  |
 | /colaborators/insert/ | POST | Registra um novo colaborador | full_name -> Nome completo do colaborador, department_id -> ID do departamento |
 
 #### /dependents
